@@ -16,6 +16,7 @@ import PieChartOutlineOutlinedIcon from '@mui/icons-material/PieChartOutlineOutl
 import TimelineOutlinedIcon from '@mui/icons-material/TimelineOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import MapOutlinedIcon from '@mui/icons-material/MapOutlined';
+import avatar from '../../assets/user.jpg';
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
@@ -96,8 +97,12 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.jpg`}
-                  style={{ cursor: 'pointer', borderRadius: '50%' }}
+                  src={avatar}
+                  style={{
+                    cursor: 'pointer',
+                    borderRadius: '50%',
+                    objectFit: 'cover',
+                  }}
                 />
               </Box>
               <Box textAlign="center">
